@@ -1,0 +1,77 @@
+/* My css file. */
+
+a {
+  color: gray;
+}
+
+a:hover {
+  background: #e6e6e6;
+}
+
+body {
+	width: 960px;
+	margin:auto;
+	background: white;
+	font-family: Georgia, serif;
+	padding-bottom: 8px;
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+	color: #527bbd;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+	padding-bottom: 0.2em;
+	line-height: 1.0;
+	padding-top: 0.5em;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+h1 {
+	font-size: 165%;
+}
+
+h2 {
+	padding-top: 0.8em;
+	font-size: 125%;
+}
+
+h2 + h3 {
+    padding-top: 0.2em;
+}
+
+h3 {
+	font-size: 110%;
+	border-bottom: none;
+}
+
+p {
+	line-height: 1.2;
+}
+
+
+
+/* List with dash. */
+
+ul.dash {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+ul.dash > li:before {
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+ol.square {
+	list-style-type: none;
+	margin-left: 0;
+    padding-left: 1em;
+    counter-reset: o-counter;
+}
+ol.square > li:before {
+    content: "[" counter(o-counter) "]   ";
+    counter-increment: o-counter;
+}
