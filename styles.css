@@ -1,11 +1,12 @@
 /* My css file. */
 
 a {
-  color: gray;
+	color: #224b8d;
+	text-decoration: none;
 }
 
 a:hover {
-  background: #e6e6e6;
+	border-bottom: 1px gray dotted;
 }
 
 body {
