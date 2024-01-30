@@ -1,12 +1,12 @@
 /* My css file. */
 
 a {
-	color: DarkBlue;
+	color: #990000;
 	text-decoration: none;
 }
 
 a:hover {
-	border-bottom: 1px DarkBlue dotted;
+	border-bottom: 1px #990000 dotted;
 }
 
 body {
