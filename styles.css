@@ -10,7 +10,7 @@ a:hover {
 }
 
 body {
-	width: 1000px;
+	width: 920px;
 	margin:auto;
 	background: white;
 	font-family: Arial, sans-serif;
@@ -75,4 +75,43 @@ ol.square {
 ol.square > li:before {
     content: "[" counter(o-counter) "]   ";
     counter-increment: o-counter;
+}
+
+
+
+/* Top navigation bar, stays at the top when scrolling. */
+
+html {
+	scroll-padding-top: 50px;
+}
+
+.topnav {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	background: white;
+	text-align: right;
+	padding: 10px 0;
+	border-bottom: 1px solid #aaaaaa;
+}
+
+.topnav a {
+	margin-left: 20px;
+}
+
+
+
+/* Publication list with a venue column on the left. */
+
+p.pub {
+	position: relative;
+	padding-left: 170px;
+}
+
+p.pub .venue {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 160px;
+	color: DarkBlue;
 }
